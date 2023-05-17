@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+        <div class="search-container">
+            <form>
+                <div class="advanced-search">
+                <label for="all-words">Find pages with...</label>
+                <input type="text" id="all-words" name="as_q" placeholder="all of these words">
+                <label for="exact-phrase">Find pages with...</label>
+                <input type="text" id="exact-phrase" name="as_epq" placeholder="this exact word or phrase">
+                <label for="any-words">Find pages with...</label>
+                <input type="text" id="any-words" name="as_oq" placeholder="any of these words">
+                <label for="none-words">Find pages with...</label>
+                <input type="text" id="none-words" name="as_eq" placeholder="none of these words">
+                </div>
+                <div class="buttons">
+                <button type="button" onclick="advancedSearch()">Advanced Search</button>
+                <button type="button" onclick="goToImageSearch()">Image Search</button>
+                <button type="button" onclick="goToGoogleSearch()">Back to Google Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

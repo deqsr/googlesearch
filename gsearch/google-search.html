@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Google Search</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+        <div class="search-container">
+            <form>
+                <div class="search-input-container">
+                    <input type="text" id="search-input" placeholder="Google Search" onkeydown="checkEnter(event)">
+                    <button type="button" class="clear-button" onclick="clearSearchInput()">
+                    <span class="cross-icon">&#10005;</span>
+                    </button>
+                </div>
+                <div class="buttons">
+                    <button type="button" onclick="searchGoogle()">Google Search</button>
+                    <button type="button" onclick="feelingLucky()">I'm Feeling Lucky</button>
+                    <button type="button" onclick="imageSearch()">Search Google Image</button>
+                    <button type="button" onclick="goToAdvancedSearch()">Advanced Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
